@@ -1,0 +1,111 @@
+.card{
+  padding: 31px 30px 31px 30px ;
+  background-color: rgba(253, 247, 242, 1);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.authorImg{
+  height: 250px;
+  width: 250px;
+  border-radius: 125;
+}
+.cardInfo{
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 32px;
+}
+.headerTextCont{
+  margin-bottom: 12px;
+}
+.name{
+  font-size: 28px;
+  font-weight: 500;
+  color: #232323;
+  text-transform: capitalize;
+  margin-bottom: 3px;
+}
+.position{
+  font-size: 12px;
+  color: #232323;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.description{
+  font-size: 16px;
+  color: #232323;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+.learnMoreCont{
+  padding: 12px 0px;
+  border-bottom: 2px solid #232323;
+  display: inline-block;
+  text-decoration: none;
+
+}
+.learnMore{
+  font-size: 14px;
+  color: #232323;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/* responsive */
+@media screen and (max-width: 768px){
+  .card {
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+  }
+  .authorImg{
+    height: 150px;
+    width: 150px;
+    border-radius: 75;
+  }
+  .cardInfo{
+    align-items: center;
+    padding-left: 0px;
+  }
+  .info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .description{
+    text-align: center;
+  }
+  .learnMoreCont{
+    padding: 12px 0px;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1200px){
+  .card {
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+  }
+  .authorImg{
+    height: 100px;
+    width: 100px;
+    border-radius: 50;
+  }
+  .cardInfo{
+    align-items: center;
+    padding-left: 0px;
+  }
+  .info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .description{
+    text-align: center;
+  }
+}
